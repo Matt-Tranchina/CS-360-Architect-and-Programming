@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16sp"
+    android:layout_marginTop="50dp"
+    tools:context=".ui.settings.SettingsFragment">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/textSettings"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/blank0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textSize="20sp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/resetPasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:clickable="true"
+            android:text="@string/reset_password" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:clickable="true"
+            android:text="@string/logout" />
+
+        <TextView
+            android:id="@+id/blank2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textSize="20sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/blank4a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:textSize="20sp"
+            android:text="" />
+
+
+        <TextView
+            android:id="@+id/smsNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="20sp"
+            android:text="@string/notification_SMS" />
+
+        <Switch
+            android:id="@+id/notificationSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_gravity="end"
+            android:textSize="18sp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/blank5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:textSize="60sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/blank3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:textSize="20sp"
+            android:text="@string/pref_description_theme"/>
+
+        <Switch
+            android:id="@+id/themeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
